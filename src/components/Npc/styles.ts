@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div<{size: number, left: number, top: number, sidePosition: number}>`
+
     width: ${props => props.size}px;
     height: ${props => props.size}px;
     position: absolute;
@@ -12,36 +13,24 @@ export const Container = styled.div<{size: number, left: number, top: number, si
 
 export const NameBox = styled.div`
     background-color: transparent;
-    color: red;
+    color: white;
     padding: 3px;
     border-radius: 5px;
     position: absolute;
-    font-weight: bold;
     font-size: 10px;
+    font-weight: bold;
     text-align: center;
     margin-top: -20px;
+`;
 
-    animation: name-animation 5s infinite;
-    @keyframes name-animation {
-        0% {
-            opacity: 1;
-            color: blue;
-        }
-        25% {
-            opacity: 0.8;
-            color: red;
-        }
-        50% {
-            opacity: 1;
-            color: blue;
-        }
-        75% {
-            opacity: 0.8;
-            color: red;
-        }
-        100% {
-            opacity: 1;
-            color: blue;
-        }
-    }
+export const SpecialNameBox = styled.div`
+background-color: transparent;
+color: yellow;
+padding: 3px;
+border-radius: 5px;
+position: absolute;
+font-weight: bold;
+font-size: 12px;
+text-align: center;
+margin-top: -20px;
 `;
